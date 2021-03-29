@@ -1,0 +1,23 @@
+
+<div class="container text-center">
+    <img class="img-fluid" style="width:100px;" src="/assets/password.png" alt="" />
+    <h3>Login Here</h3>
+        <form (ngSubmit)="onSubmit()">
+            <div class="row">
+                <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Username</mat-label>
+                <input required name="username" [(ngModel)] = "data.username" matInput>
+                </mat-form-field>
+            </div>
+            <div class="row">
+                <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Password</mat-label>
+                <input required type = "password"name="password" [(ngModel)] = "data.password"  matInput >
+                </mat-form-field>
+            </div>
+            <div class="row">
+                <button  type="submit" mat-raised-button color="primary">Create Account</button>
+                <button style="margin-left: 10px;" type="reset" mat-raised-button color="accent">Reset</button>
+            </div>
+        </form>
+</div>
